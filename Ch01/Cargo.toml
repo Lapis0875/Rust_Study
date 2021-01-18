@@ -1,5 +1,5 @@
 [package]
-name = "TeamIF_RustStudy"
+name = "hello_world"
 version = "0.1.0"
 authors = ["Minjun Kim (Lapis0875) <lapis0875@kakao.com>"]
 edition = "2018"
