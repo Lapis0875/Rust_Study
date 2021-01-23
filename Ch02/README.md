@@ -178,3 +178,12 @@ println!("x = {} and y = {}", x, y);
 ## 4. `rand` crate 추가하기
 Ch02에 생성된 프로젝트는 실행이 가능한 binary crate 입니다.
 `rand` crate 는 다른 프로그램에서 사용되기 위한 용도인 library crate 입니다.
+```toml
+[dependencies]
+rand = "0.3.14"
+```
+`dependencies` 절은 프로젝트가 의존하고 있는 `crate` 들과 각각의 요구 버전을 Cargo 에 명시하는 곳입니다.
+`dependencies` 절에 `rand = "0.3.14"` 를 추가합니다. 
+이는 `rand` 크레이트의 유의적 버전인 `0.3.14` 를 명시하는 것입니다.
+Cargo 는 버전을 명시하는 데 [유의적 버전 (Semantic Versioning)](https://semver.org/lang/ko/) 을 이용합니다.
+`0.3.14` 는 `^0.3.14` 의 축약형이 되며 이는 버전 `0.3.14` 와 호환되는 API 를 제공하는 모든 버전임을 의미합니다.
